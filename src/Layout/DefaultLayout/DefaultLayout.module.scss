@@ -1,0 +1,14 @@
+.wrapper 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container
+{
+    width: var(--defaultLayoutWidth);
+    background-color: orange;
+    margin-top:60px;
+    height:5000px;
+}

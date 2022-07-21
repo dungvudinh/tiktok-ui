@@ -1,0 +1,181 @@
+@use '../../../sass/' as *;
+.wrapper 
+{
+    height: 60px;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+}
+.inner 
+{
+    height:100%;
+    width:var(--defaultLayoutWidth);
+    padding-left:20px;
+    padding-right:24px;
+    @include flex(space-between, center);
+}
+//logo 
+.logo 
+{
+    @include flex(center, center);
+    cursor:pointer;
+}
+//center 
+
+//right 
+.right 
+{
+   
+    @include flex(space-between, center);
+    width:273.63px;
+    height: 36px;
+    .button-menu 
+    {
+        position: relative;
+        flex:1;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .icon-upload 
+    {
+        margin-right: 8px;
+    }
+    .btn-message
+    {
+        width: 32px;
+        height: 32px;
+        font-size: 2.2rem;
+        background-color: transparent;
+        @include flex(center, center);
+        cursor: pointer;
+        &::after 
+        {
+            content:'';
+        
+        }
+    }
+    .btn-inbox 
+    {
+        width: 32px;
+        height: 32px;
+        font-size: 2.2rem;
+        background-color: transparent;
+        cursor: pointer;
+        @include flex(center, center);
+    }
+
+}
+
+.login-container 
+{
+    height: 581px;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    overflow: hidden auto;
+    padding: 0 30px;
+    .item 
+    {
+    width: 100%;
+    margin-bottom:16px;
+    position: relative;
+    height:44px;
+    cursor:text;
+    }
+    // .item 
+    // {
+    //     height:44px;
+    //     display: flex;
+    //     align-items: center;
+    //     width: 100%;
+    //     position: relative;
+    .title 
+    {
+        position: absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+//footer login 
+.footer 
+{
+    border-top:1px solid rgba(22, 24, 35, 0.12);
+    @include flex(center,  center);
+    flex:1;
+    .link-text 
+    {
+        margin-left:5px;
+        color:rgb(254, 44, 85);
+    }
+}
+.profile-container 
+{
+    width:223px;
+    height:311px;
+}
+
+.container-inbox 
+{
+    // padding:10px;
+    width:376px;
+    height:640px;
+    font-family: 'ProximaNovaRegular', sans-serif;
+    .header-container
+    {
+        padding:24px 0 0 16px;
+        .title 
+        {
+            font-family: 'ProximaNova2';
+        }
+        .group-container 
+        {
+            @include flex(space-between, center);
+            margin-top:16px;
+            height: 36px;
+            flex-wrap:nowrap;
+            padding-right:12px;
+            .group-item 
+            {
+                padding:4px 8px;
+                background-color:rgb(70, 56, 56);
+                margin: 0 8px 12px 0;
+                display: block;
+                cursor:pointer;
+                text-align:center;
+                background: rgb(241, 241, 241);
+                border-radius:12px;
+                width: 100%;         
+                transition: all 300ms ease 0s;
+            }
+        }
+    }
+    .content-container 
+    {
+        height:246px;
+        padding:88px 32px 0;
+        width: 100%;
+        .error-container 
+        {
+            @include flex(center,  center);
+            flex-direction: column;
+            .error-title 
+            {
+                margin-top:20px;
+                font-size: 1.5rem;
+            }
+            .error-desc 
+            {
+                margin-top:12px;
+                font-size: 1.4rem;
+                color:var(--txtColor);
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@use '../../../sass/' as *;
+.menu 
+{
+    position: relative;
+    margin-top:5px;
+    // max-width:590px;
+    width:223px;  
+    // &::after 
+    // {
+    //     content:'';
+    //     position: absolute;
+    //     border-top:0 solid transparent;
+    //     border-right:10px solid transparent;
+    //     border-bottom:10px solid rgb(255, 255, 255);
+    //     border-left: 10px solid transparent;
+    //     top:-10px;
+    //     right:15px;
+    //     // box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
+
+    // }
+    .menu-header 
+    {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height:50px;
+        cursor:pointer;
+        position: relative;
+        margin-top:-8px;
+        .back-btn 
+        {
+           width: 50px;
+           height: 26px;
+           background-color:transparent;
+           cursor:pointer;
+        }
+        .title 
+        {
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+        }
+        
+    }
+    .menu-container 
+    {
+        // max-height:311px;
+        max-height:590px;
+        overflow-y: auto;
+        .menu-item 
+        {
+            height: 42px;
+            padding:10px 16px;
+            svg 
+            {
+                font-size: 2rem;
+            }
+            &:hover 
+            {
+                background: rgba(22, 24, 35, 0.03);
+            }
+            &.separate 
+            {
+                border-top:1px solid rgba(22, 24, 35, 0.12);
+            }
+        }
+        .title-item 
+        {
+            margin-left:8px;
+        }
+
+    }
+}

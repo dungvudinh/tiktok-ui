@@ -1,0 +1,104 @@
+
+@import 'normalize.css';
+
+:root 
+{
+    --bgr-primary: rgba(255, 255, 255, 1.0);
+    --color-button-primary: rgba(254, 44, 85, 1.0);
+    --defaultLayoutWidth:1150px;
+    --blkColor:#000;
+    --txtColorPri:rgba(22, 24, 35, 1.0);
+    --txtColorSec:rgba(22, 24, 35, 0.5);
+    --txtColor:rgba(22, 24, 35, 0.75);
+}
+*
+{
+    box-sizing:border-box;
+    padding:0;
+    margin: 0;
+}
+
+::-webkit-scrollbar
+{
+    border-radius: 0;
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .15);
+    
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+html 
+{
+    font-size: 62.5%;
+}
+body 
+{
+    font-family: 'ProximaNova', sans-serif;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+    overflow-y: overlay;
+}
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('~/src/assets/Fonts/Proxima-Nova-Bold.woff');
+}
+@font-face {
+    font-family: 'ProximaNova2';
+    src: url('~/src/assets/Fonts/Proxima-Nova-Bold.woff2');
+}
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('~/src/assets/Fonts/Proxima-Nova-Regular.woff2');
+}
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('~/src/assets/Fonts/Proxima-Nova-Semibold.woff2');
+}
+@font-face {
+    font-family: 'ProximaNovaSemibold2';
+    src: url('~/src/assets/Fonts/ProximaNova-Semibold.woff2');
+}
+@font-face {
+    font-family: 'SofiaPro';
+    src: url('~/src/assets/Fonts/sofiapro-bold.woff2'); 
+}
+body .tippy-box 
+{
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    font-size: 1.6rem;
+    background-color:rgba(84, 84, 84, 0.92);
+    border-radius: 8px  ;
+    .tippy-content
+    {
+        padding:8px;
+    }
+    .tippy-arrow
+    {
+        color:rgba(84, 84, 84, 0.92);
+    }
+}
+input, button, [tabindex]
+{
+    outline:none;
+    border:none;
+}
+a[href] 
+{
+    text-decoration:none;
+}
+li 
+{
+    list-style-type:none;
+}
+
